@@ -18,8 +18,10 @@ describe '#square_array' do
     expect(square_array([1,2,3])).to eq([1,4,9])
     expect(square_array([9,10,16,25])).to eq([81,100,256,625])
   end
-def square_array(array)
-  #look at each element of array. mult by itself. 0 thru -1.save to new array. outpout new.
-  array.collect { |x| x*x }
+
+  def square_array(array)
+   #look at each element of array. mult by itself. 0 thru -1.save to new array. outpout new.
+   array.collect { |x| x*x }
 end
+
 end
